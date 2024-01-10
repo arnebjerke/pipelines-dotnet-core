@@ -18,9 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-  - task: SnykSecurityScan@1
-    inputs:
-      serviceConnectionEndpoint: 'SnykUsedforPipelinePurposes'
-      testType: 'app'
-      monitorWhen: 'always'
-      failOnIssues: true
+- task: SnykSecurityScan@1
+  inputs:
+    serviceConnectionEndpoint: 'SnykUsedforPipelinePurposes'
+    testType: 'app'
+    monitorWhen: 'always'
+    failOnIssues: true
